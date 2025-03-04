@@ -1,0 +1,80 @@
+/*Base*/
+
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+/*General*/
+
+body{
+    font-family: 'Averia Serif Libre';
+    color: #eca136;
+    background-color: rgb(9, 26, 33);
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*éléments*/
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.5rem;
+    
+}
+
+li{
+    margin: 20px;
+    background-color: rgb(15, 38, 49);
+    border-radius: 10px;
+}
+
+/*Components*/
+
+header{
+    width: 1000px;
+    background-color: rgba(15, 38, 49, 0.95);
+
+    position: fixed;
+    top: 0;
+    left: calc(50% - 500px);
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /*mettre padding...*/
+   
+}
+
+
+header.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contenu{
+    max-width: 925px;
+    margin-top: 100px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.contenu img{
+    max-width: 100%;
+}
+
+.contenu ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    list-style-type: none;
+}
