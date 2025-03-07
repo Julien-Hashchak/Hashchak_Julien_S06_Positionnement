@@ -32,8 +32,9 @@ h1{
 }
 
 li{
-    margin: 20px;
-    background-color: rgb(15, 38, 49);
+    
+    
+    
     border-radius: 10px;
 }
 
@@ -63,9 +64,7 @@ header.wrapper{
 section.contenu{
     max-width: 925px;
     margin-top: 100px;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 100px auto 0 auto;
 }
 
 section.contenu img{
@@ -77,6 +76,11 @@ section.contenu img{
     grid-template-columns: 1fr 1fr;
     gap: 45px;
     list-style-type: none;
+    padding-left: 0;
+}
+
+.contenu li{
+    border: 20px solid rgb(15, 38, 49);
 }
 
 .bouton span{
@@ -95,4 +99,47 @@ section.contenu img{
     position: relative;
 }
 
+
+footer p{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    margin: 0;
+
+    background-color: rgba(15, 38, 49, .95);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+    font-size: 1rem;
+    font-variant: small-caps;
+
+}
+
+.media{
+    background-color: rgba(15, 38, 49, .95);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    position: fixed;
+    left: 0;
+    top: 200px;
+}
+
+.media ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.media li{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.media a:hover{
+    margin-left: 3px;
+    position: relative;
+}
 /* METTRE MARGIN CORRECTEMENT ! */
